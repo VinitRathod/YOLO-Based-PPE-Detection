@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Gear Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .upload-form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Safety Gear Detection System</h1>
+
+    <div class="container">
+        <div class="card">
+            <h2>Real-time Detection</h2>
+            <p>Detect safety gear violations using your webcam</p>
+            <a href="/realtime"><button>Start Live Detection</button></a>
+        </div>
+
+        <div class="card">
+            <h2>Upload Media</h2>
+            <p>Upload an image or video for detection</p>
+            <form class="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" accept="image/*,video/*" required>
+                <button type="submit">Upload and Process</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

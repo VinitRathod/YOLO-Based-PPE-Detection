@@ -1,0 +1,6 @@
+train: /content/drive/MyDrive/PPE detection/train/images
+val: /content/drive/MyDrive/PPE detection/valid/images
+test: /content/drive/MyDrive/PPE detection/test/images
+
+nc: 12
+names: ['glove', 'goggles', 'helmet', 'mask', 'no-suit', 'no_glove', 'no_goggles', 'no_helmet', 'no_mask', 'no_shoes', 'shoes', 'suit']
